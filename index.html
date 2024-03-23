@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dead inside</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+
+
+
+    <header>
+        <a href="https://t.me/AssMaser" target="_blank" class="logo"><img src="img/logo.svg" alt=""></a>
+        <span class="menu-btm">&equiv;</span>
+        <nav>
+            <a href="#banner" class="link">Главная</a>
+            <a href="#favorite" class="link">Обо мне</a>
+            <a href="#streams" class="link">Мои стримы </a>
+        </nav>
+
+        <a href="#" class="btm">напиши мне</a>
+
+
+    </header>
+
+    <main>
+        <div class="banner" id="banner">
+            <h1>Я-стример</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Officiis similique ducimus veritatis eos distinctio vitae reprehenderit. <br>
+                A hic, pariatur alias recusandae delectus aut autem sint.</p>
+
+            <a href="#" class="btm">узнать детали</a>
+        </div>
+
+        <div class="Games" id="favorite">
+            <h2>Мои любимые игры</h2>
+            <div class="boxes">
+                <div>
+                    <img src="img/Rust.png" alt="" width="400">
+                    <span> 100 subscribres</span>
+                </div>
+                <div>
+                    <img src="img/KS2.jpeg" alt="" width="400">
+                    <span> 200 subscribres</span>
+                </div>
+                <div>
+                    <img src="img/minecraft.png" alt="" width="400">
+                    <span> 300 subscribres</span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="streams" id="streams">
+            <h2>СМОТОРЕТЬ ТАКЖЕ</h2>
+            <div class="slider">
+
+                <img src="img/1.jpg" alt="">
+                <img src="img/2.jpeg" alt="">
+                <img src="img/3.jpeg" alt="">
+                <img src="img/5.jpeg" alt="">
+                <img src="img/6.jpg" alt="">
+                <img src="img/7.jpg" alt="">
+                <img src="img/8.jpeg" alt="">
+
+            </div>
+
+
+
+
+        </div>
+
+
+    </main>
+    <footer class="icon">
+        <a href="https://t.me/AssMaser" target="_blank">
+            <img src="img/1.svg" alt="">
+        </a>
+        <a href="https://youtube.com/@Low_Oni" target="_blank">
+            <img src="img/2.svg" alt="">
+        </a>
+        <a href="https://vk.com/loonywers" target="_blank">
+            <img src="img/3.svg" alt="">
+        </a>
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script>
+        $('.slider').slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            //dots : true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
+
+        })
+    </script>
+
+<nav class="open">
+
+</nav>
+
+    <script>
+
+        $('.menu-btm').click(function () {
+        $('nav').toggleClass('open');
+        })
+
+    </script>
+</body>
